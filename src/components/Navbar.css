@@ -57,7 +57,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: white;
+  background-color: rgb(109, 108, 108);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   padding: 0.5rem 0;

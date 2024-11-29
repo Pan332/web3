@@ -1,0 +1,126 @@
+/* Parent Container */
+.campaign-manager {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+.campaign-manager__title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Connect Wallet Button */
+.campaign-manager__connect-btn {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.campaign-manager__connect-btn:hover {
+  background-color: #45a049;
+}
+
+/* Form */
+.campaign-manager__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Form Group */
+.campaign-manager__form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Labels */
+.campaign-manager__label {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Inputs */
+.campaign-manager__input,
+.campaign-manager__textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.campaign-manager__input:focus,
+.campaign-manager__textarea:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Textarea */
+.campaign-manager__textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Submit Button */
+.campaign-manager__submit-btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.campaign-manager__submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.campaign-manager__submit-btn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Error Message */
+.campaign-manager__error {
+  margin-top: 1rem;
+  color: red;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .campaign-manager {
+    padding: 1.5rem;
+  }
+
+  .campaign-manager__title {
+    font-size: 1.8rem;
+  }
+
+  .campaign-manager__connect-btn,
+  .campaign-manager__submit-btn {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
+  }
+}

@@ -25,28 +25,11 @@ function Dashboard() {
                         <p className='overlay-text2'>For charities No fee.</p>
                         <div className='custom-search-container'>
                             <CampaignProvider>
-                                <Search />
                             </CampaignProvider>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='visualization'>
-                <div className='totalcampaign'>
-                    <h2>Total Campaigns</h2>
-                    <h2>{loading ? 'Loading...' : campaignCount}</h2>
-                </div>
-                <div className='totalfund'>
-                    <h2>Total Funds</h2>
-                    <h2>{loading ? 'Loading...' : amount} ETH</h2>
-                </div>
-                <div className='paticipant'>
-                    <h2>Participants</h2>
-                    <h2>{loading ? 'Loading...' : userCount}</h2>
-                </div>
-            </div>
-            {error && <p className="error">{error}</p>}
-        
         </div>
         
     );

@@ -156,6 +156,7 @@ function CampaignsDetailsPage() {
                             variant="body1" 
                             mt={2} 
                             dangerouslySetInnerHTML={{ __html: campaign.description }} 
+                            sx={{ whiteSpace: 'normal', wordWrap: 'break-word' }} 
                         />
 
                         <Button 
@@ -208,7 +209,7 @@ function CampaignsDetailsPage() {
                         <Box>
                            {donators.length > 0 ? (
                                 donators.map((donator, index) => (
-                                    <Box key={index} sx={{ display: 'flex-start', justifyContent: 'space-between', mb: 1 }}>
+                                    <Box key={index} sx={{ display: 'flex', justifyContent: 'space-between', mb: 1 }}>
                                         <Typography variant="body2">{donator.address}</Typography>
                                         <Typography variant="body2">{donator.amount} ETH</Typography>
                                     </Box>

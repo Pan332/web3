@@ -7,8 +7,6 @@ import Categories from "../components/Category.jsx";
 import Footer from '../components/Footer.jsx';
 import HowItWorks from "../components/HowItWorks.jsx";
 import Why from "../components/Why.jsx";
-import Search from "../components/Search.jsx";
-import web3 from '../web3';
 import './Homepage.css'; 
 import { useMetamaskAccount } from "../web3Context.jsx";
 
